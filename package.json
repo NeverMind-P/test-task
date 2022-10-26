@@ -1,0 +1,17 @@
+{
+  "name": "node-authentication",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0",
+    "express-session": "^1.17.3",
+    "mysql": "^2.7.0",
+    "nodemon": "^2.0.20"
+  }
+}

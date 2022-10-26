@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		body { padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+	<% if (message.length) { %>
+		<div class="alert alert-danger" role="alert"> <%= message %> </div>
+	<% } %>
+
+	<form action="/signup" method="post">
+		<div class="form-group">
+			<label>Email</label>
+			<input type="email" class="form-control" name="email">
+
+			<label>Name</label>
+			<input type="text" class="form-control" name="name">
+
+			<label>Last Name</label>
+			<input type="text" class="form-control" name="lastName">
+
+			<label>Home Phone</label>
+			<input type="text" class="form-control" name="homePhone">
+
+			<label>Inquiry Details</label>
+			<input type="text" class="form-control" name="inquiryDetails">
+
+			<label>Interests</label>
+			<input type="text" class="form-control" name="interests">
+		</div>
+
+		<button type="submit" class="btn btn-warning btn-lg">Signup</button>
+	</form>
+
+</div>
+
+</div>
+</body>
+</html>
